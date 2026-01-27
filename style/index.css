@@ -13,6 +13,7 @@ body{
 
 div{
     border: 1px solid white;
+    padding : 5px;
 }
 
 .container{
@@ -23,7 +24,7 @@ div{
 
 /* left window */
 .left-panel{
-    width: 20vw;
+    width: 15vw;
     background: #0f172a;
     display:flex;
     flex-direction:column;
@@ -34,7 +35,7 @@ div{
 }
 .left-bottom{
     height: 60vh;
-    border: 1px solid black;
+    border: 1px solid #1e293b;
 }
 
 /* main window */
@@ -61,8 +62,23 @@ div{
 }
 
 /* right window */
-.right-panel{
-    width: 20vw;
+.right{
+    width: 25vw;
     background: #0f172a;
+    display:flex;
 }
-
+.right-panel{
+    width:20vw;
+}
+.profile{
+    width: 5vw;
+}
+.theme{
+    height: 5vh;
+}
+.skill{
+    height: 75vh;
+}
+.status{
+    height: 15vh;
+}

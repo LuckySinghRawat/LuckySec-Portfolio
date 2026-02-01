@@ -1,23 +1,23 @@
-*{
-    margin :0;
-    padding : 0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    height :100vh;
-    background : #0b0f14;
-    color : #cfd8dc;
+body {
+    height: 100vh;
+    background: #0b0f14;
+    color: #cfd8dc;
     font-family: monospace;
 }
 
-div{
+div {
     border: 1px solid white;
-    padding : 5px;
+    padding: 5px;
 }
 
-.container{
-    display : flex;
+.container {
+    display: flex;
     height: 100vh;
     width: 100vw;
 }
@@ -25,17 +25,19 @@ div{
 
 
 /* left window */
-.left-panel{
+.left-panel {
     width: 15vw;
     background: #0f172a;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
-.left-top{
-    height:40vh;
+
+.left-top {
+    height: 40vh;
     border: 1px solid #1e293b;
 }
-.left-bottom{
+
+.left-bottom {
     height: 60vh;
     border: 1px solid #1e293b;
 }
@@ -43,23 +45,25 @@ div{
 
 
 /* main window */
-.main-panel{
+.main-panel {
     width: 60vw;
     background: #0f172a;
     display: flex;
     flex-direction: column;
 }
-.tabs{
-    height : 6vh;
+
+.tabs {
+    height: 6vh;
     background: #020617;
     border-bottom: 1px solid #4375c5;
 }
-.content{
-    flex : 1;
-    padding: 10px
 
+.content {
+    flex: 1;
+    padding: 10px
 }
-.terminal{
+
+.terminal {
     height: 20vh;
     background: #020617;
     border-top: 1px solid #1e293b;
@@ -68,109 +72,153 @@ div{
 
 
 /* right window */
-.right{
+.right {
     width: 25vw;
     background: #0f172a;
-    display:flex;
+    display: flex;
 }
-.right-panel{
-    width:20vw;
+
+.right-panel {
+    width: 20vw;
 }
 
 
 /* profile */
-.profile{
+.profile {
     width: 4vw;
     display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
-    background: #0f172a; 
+    background: #0f172a;
 }
-.btn{
+
+.btn {
     width: 48px;
     height: 48px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     background: #1e1e1e;
     border: 1px solid black;
     border-radius: 5px;
 }
-.btn:hover{
+
+.btn:hover {
     background: #eaeaea;
 }
+
 .btn img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  display: block;
-  border:1px solid black;
-  border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 
 
-.theme{
+.theme {
     height: 5vh;
 }
-.skill{
+
+
+/* skills block */
+.skill {
     height: 75vh;
-    overflow-y:auto;
+    overflow-y: auto;
 }
+
 .skill::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 .skill::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 .skill::-webkit-scrollbar-thumb {
-  background: #0f172a;
-  border-radius: 4px;
+    background: #0f172a;
+    border-radius: 4px;
 }
 
 .skill::-webkit-scrollbar-thumb:hover {
-  background: #535e6e;
+    background: #535e6e;
 }
 
-.status{
-    height: 15vh;
-}
-.explorer-title {
-  font-size: 12px;
-  width: 17vw;
-  color: #94a3b8;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-}
-/* files */
-details summary{
+.skill li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
     cursor: pointer;
-    padding: 4px 6px;
-    border-radius: 4px;
-    list-style:none;
 }
-details summary:hover{
+.skill li img {
+    width: 18px;
+    height: 18px;
+    background: #0f172a;
+    padding: 2px;
+    border-radius: 4px;
+}
+.skill li:hover {
+    background: #1f2933;
+}
+
+
+
+.explorer-title {
+    font-size: 12px;
+    width: 17vw;
+    color: #94a3b8;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    
+}
+
+/* files */
+details summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 5px;
+}
+details summary img{
+    width: 18px;
+    height: 18px;
+    padding: 1px;
+}
+
+details summary:hover {
     background: #1e293b;
 }
-details ul{
-    list-style:none;
+
+details ul {
+    list-style: none;
     padding-left: 20px;
     margin-top: 5px;
 }
-details ul li{
+
+details ul li {
     padding: 3px 6px;
     border-radius: 4px;
     cursor: pointer;
     color: #e5e7eb;
 }
-details ul li:hover{
+
+details ul li:hover {
     background: #1e293b;
 }
-details ul li:active{
-    background:#808daa;
-    color:white;
+
+details ul li:active {
+    background: #808daa;
+    color: white;
+}
+
+
+
+
+.status {
+    height: 15vh;
 }

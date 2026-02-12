@@ -5,6 +5,7 @@
 }
 
 body {
+    position:fixed;
     height: 100vh;
     background: #0b0f14;
     color: #cfd8dc;
@@ -127,7 +128,7 @@ div {
 
 /* skills block */
 .skill {
-    height: 75vh;
+    height: 70vh;
     overflow-y: auto;
 }
 
@@ -218,7 +219,26 @@ details ul li:active {
 
 
 
-
+/* STAUTS */
 .status {
-    height: 15vh;
+    height: 20vh;
+    background: #0f172a;
+    border-top: 1px solid #1e293b;
+    font: size 13px;
+    font-family:"Fira Code",monospace;
+    color:#cbd5e1;
+}
+.status ul{
+    justify-content:space-between;
+    align-items:center;
+    list-style-type: style none;
+    margin:0;
+    padding: 0 15px;
+}
+.status li:hover{
+    color:#38bdf8;
+}
+.online{
+    color:#22c55e;
+    font-weight: bold;
 }
